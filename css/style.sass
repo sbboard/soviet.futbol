@@ -17,7 +17,7 @@ html
             color: yellow
             h1
                 font-family: 'Roboto', sans-serif
-                font-size: 4em
+                font-size: 6em
                 font-weight: 800
                 width: fit-content
                 display: inline-block
@@ -28,11 +28,16 @@ html
                 font-weight: 600
                 li
                     display: inline-block
+                    a
+                        color: yellow
+                        text-decoration: none
+                        &:hover
+                            text-decoration: underline
                     ul
                         display: inline-block
                         margin-left: 1em
     #sticker
-        height: calc(100vh - 7em)
+        height: calc(100vh - 9em)
         text-align: center
         display: flex
         justify-content: center

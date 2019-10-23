@@ -70,7 +70,7 @@ html body header {
 }
 html body header h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 4em;
+  font-size: 6em;
   font-weight: 800;
   width: fit-content;
   display: inline-block;
@@ -84,12 +84,19 @@ html body header #menu {
 html body header #menu li {
   display: inline-block;
 }
+html body header #menu li a {
+  color: yellow;
+  text-decoration: none;
+}
+html body header #menu li a:hover {
+  text-decoration: underline;
+}
 html body header #menu li ul {
   display: inline-block;
   margin-left: 1em;
 }
 html #sticker {
-  height: calc(100vh - 7em);
+  height: calc(100vh - 9em);
   text-align: center;
   display: flex;
   justify-content: center;

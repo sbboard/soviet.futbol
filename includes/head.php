@@ -11,16 +11,10 @@
             <h1>Soviet.Futbol</h1>
             <div id="menu">
                 <li>
-                    <ul>home</ul>
-                    <ul>catalog</ul>
-                    <ul>discontinued</ul>
-                    <ul>message</ul>
+                    <ul><a href="#">home</a></ul>
+                    <ul><a href="#">catalog</a></ul>
+                    <ul><a href="#">discontinued</a></ul>
+                    <ul><a href="#">msg</a></ul>
                 </li>
             </div>
         </header>
-        <div id="sticker">
-            <img id="stickerImg" src="stickers/1.png" alt="stickers"/>
-        </div>
-    </body>
-    <script src="app.js"></script>
-</html>
