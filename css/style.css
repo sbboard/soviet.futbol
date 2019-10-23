@@ -99,11 +99,6 @@ html body header #menu {
     font-size: 2em;
   }
 }
-@media only screen and (max-width: 850px) {
-  html body header #menu {
-    font-size: 1.75em;
-  }
-}
 html body header #menu li {
   display: inline-block;
 }
@@ -121,6 +116,11 @@ html body header #menu li ul {
 @media only screen and (max-width: 1050px) {
   html body header #menu li ul {
     margin-left: 0.25em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  html body header #menu li ul:first-of-type {
+    margin-left: 0;
   }
 }
 html #sticker {
