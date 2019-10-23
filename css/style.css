@@ -88,5 +88,13 @@ html body header #menu li ul {
   display: inline-block;
   margin-left: 1em;
 }
+html #sticker {
+  height: calc(100vh - 7em);
+  text-align: center;
+}
+html #sticker img {
+  max-height: 100%;
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
