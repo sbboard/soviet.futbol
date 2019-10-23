@@ -12,8 +12,8 @@
             <div id="menu">
                 <li>
                     <ul><a href="#">home</a></ul>
-                    <ul><a href="#">catalog</a></ul>
-                    <ul><a href="#">discontinued</a></ul>
+                    <ul><a href="#">catalogue</a></ul>
+                    <ul><a href="#">backlog</a></ul>
                     <ul><a href="#">msg</a></ul>
                 </li>
             </div>

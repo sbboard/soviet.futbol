@@ -1,47 +1,76 @@
 @import reset.css
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap')
 
+$yellow: #fff700
+$midWidth: 1050px
+$phoneWidth: 850px
+
+@mixin tablet
+  @media only screen and (max-width : $midWidth)
+    @content
+
+@mixin phone
+  @media only screen and (max-width : $phoneWidth)
+    @content
+
 html
+    background-image: url('../assets/paperbg2.jpg')
+    background-size: auto
     body
         font-family: 'Raleway', sans-serif
-        background-image: url('../assets/paperbg2.jpg')
-        background-size: cover
         max-width: 1500px
         display: block
         margin: 0 auto
         header
             margin: 1em
             display: flex
-            align-items: center
+            align-items: flex-start
             justify-content: space-between
-            color: yellow
+            color: $yellow
+            height: 6em
+            @include phone
+                flex-direction: column
             h1
                 font-family: 'Roboto', sans-serif
                 font-size: 6em
                 font-weight: 800
                 width: fit-content
                 display: inline-block
+                @include tablet
+                    font-size: 5em
             #menu
                 width: fit-content
                 display: inline-block
                 font-size: 1.5em
                 font-weight: 600
+                @include tablet
+                    font-size: 2em
+                @include phone
+                    font-size: 1.75em
                 li
                     display: inline-block
                     a
-                        color: yellow
+                        color: $yellow
                         text-decoration: none
                         &:hover
                             text-decoration: underline
                     ul
                         display: inline-block
                         margin-left: 1em
+                        @include tablet
+                            margin-left: .25em
     #sticker
-        height: calc(100vh - 9em)
+        height: calc(100vh - 10em)
         text-align: center
         display: flex
         justify-content: center
         align-items: center
+        filter: drop-shadow(2px 4px 6px black)
         img
             max-height: 60%
             max-width: 60%
+    footer
+        color: $yellow
+        text-align: right
+        margin-right: 1em
+        font-weight: 600
